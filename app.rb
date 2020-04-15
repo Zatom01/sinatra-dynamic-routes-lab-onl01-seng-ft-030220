@@ -29,8 +29,10 @@ class App < Sinatra::Base
     @operation=params[:operation]
     @number1=params[:number1].to_i
     @number2=params[:number2].to_i
-    @solution=@number1 @operation @number2
-    "#{@solution}"
+    
+    if @operation=="add"
+      "#{@number1+@number2}"
+    end 
     
   end 
   
