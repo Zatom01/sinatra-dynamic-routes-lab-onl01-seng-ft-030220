@@ -20,5 +20,8 @@ class App < Sinatra::Base
     "#{@final}"
     
   end 
+  
+  get '/say'
+  
 
 end
